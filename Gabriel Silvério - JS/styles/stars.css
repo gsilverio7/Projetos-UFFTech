@@ -1,0 +1,20 @@
+
+
+html { background-image:url(../images/starswp1.jpg);background-size:contain}
+
+main {background:transparent); width:955px;margin:-1px auto 10px; font-family: gugi, cursive; padding: 25px;
+}
+
+nav ul li a:hover { background-color:lightyellow}
+nav li {color: yellow; text-transform: uppercase; font-weight: bold}
+article p,h1,h2,h3,h4,h5,h6 {color: yellow;  text-transform: uppercase; font-weight: bold}
+footer p {color: yellow; text-transform: uppercase; font-weight: bold}
+
+article p {margin-bottom: 25px}
+
+.link{color: yellow; text-transform: uppercase; font-weight: bold; text-decoration: underline }
+article ul li {color: yellow;  text-transform: uppercase; font-weight: bold}
+article ol li {color: yellow;  text-transform: uppercase; font-weight: bold}
+.failproof {color: yellow; text-transform: uppercase; font-weight: bold}
+
+article img {border: 2px solid; border-color: yellow; padding: 1px}

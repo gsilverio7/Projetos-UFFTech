@@ -1,0 +1,173 @@
+<!doctype html>
+<!--Comentário-->
+<html lang="pt-BR">
+  
+   <head>
+      
+ 
+       <link href="./styles/metal.css" rel="stylesheet">
+       
+    <meta charset="utf-8">
+    <title>Meu Perfil</title>
+       
+       <style>
+          
+           
+          header {margin-bottom: 10em}
+            
+            nav ul { list-style:none; margin:0; padding:4px }
+            nav ul li { display:inline-block }
+            nav ul li a {text-decoration: none; padding:4px 20px }
+           
+            
+        </style>
+  </head>
+        
+  <body>
+    
+      <main>
+      
+       <section id="topo"></section>
+      
+    <header>
+      
+        <a href="https://pt-br.facebook.com/UFFOficial/" target="_blank"><img src="./images/uff.png" width="100" height="50" title="UFF" alt="UFF logo" style="float:left; margin:15px"></a>
+        <a href="https://www.facebook.com/ufftech.ej/" target="_blank"><img src="./images/tech21.png" width="175" height="100" title="UFFTech" alt="UFFTech logo" style="float:right"></a>
+        <h4 style="text-align: center">PROJETO TRAINEE</h4>
+      
+    </header>
+      
+      <nav>
+          
+            <h2 style="text-align: center">Selecione outro template:</h2>
+            
+            <ul style="text-align: center">
+                
+                <li><a href="PGssS.html" class="link">STARS</a></li>
+                <li><a href="PGssP.html" class="link">PIXEL</a></li>
+                <li><a href="PGssC.html" class="link">FORMAL</a></li>
+                <li><a href="PGssT.html" class="link">CINE</a></li>        
+            
+            </ul>
+        
+          
+        </nav>
+      
+          <div id="relogio">
+          
+            <p id="hora"></p>
+            <p id="dia"></p>  
+          
+              <script>
+                    
+                  var watch= new Date();
+                  var hrs=watch.getHours();
+                  var min=watch.getMinutes();
+                  var sec=watch.getSeconds();
+                  
+                  if (hrs<10) {hrs="0"+hrs} else {hrs=hrs};
+                  if (min<10) {min="0"+min} else {min=min};
+                  if (sec<10) {sec="0"+sec} else {sec=sec};
+                    
+                  var semana=["Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sábado"];
+                  var sched=["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
+                  
+                  var dia=watch.getDay();
+                  var dian=watch.getDate();
+                  var mes=watch.getMonth();
+                  
+                  var ano=watch.getFullYear();
+                  
+                  dia = semana[dia]
+                  mes = sched[mes]
+                                   
+                  document.getElementById("hora").innerHTML = ("Relógio Digital - " + hrs + ":" + min + ":" + sec);
+                  document.getElementById("dia").innerHTML = (dia+ ", " + dian + " de " + mes + " de " + ano);  
+                  
+              </script>
+              
+              
+          </div>
+          
+          
+          
+    <article>
+      
+        <h1 >Sobre Minha Pessoa:</h1>
+        <h2>Gabriel da Silva Silvério</h2>
+      
+        <figure><img src="./images/eu.jpg" title="Sou eu" alt="Minha Foto" ></figure>
+      
+    
+      <p>Meu nome é Gabriel da Silva Silvério, sou cristão, tenho atualmente 21 anos, natural de Volta Redonda e moro em Barra do Piraí com minha família.</p>
+      
+      <p>Atualmente curso o 7º período de engenharia metalúrgica na Universidade Federal Fluminense e tive meu primeiro contato com a programação através da disciplina de mesmo nome que cursei na faculdade. Com meu crescente interesse nessa área, decidi me juntar ao projeto de extensão (e futura empresa júnior) UFFTech.</p>
+      
+      <p> Espero dar o meu melhor, aprender o máximo possível, e contribuir com os objetivos da UFFTech em disseminar o conhecimento e tecnologia da área de TI em nossa região e também se tornar uma empresa de referência na mesma.  </p>
+      
+        
+        <p id="idade"></p>
+        
+          
+        <script type="text/javascript">
+                
+           var agora = new Date();
+           var anos = agora.getFullYear()-1997;
+           var meses = (agora.getMonth()+1)-7;
+                      
+           if (meses<0) {anos=(anos-1);
+                         meses=(12+meses);}
+           else {anos=anos;meses=meses};
+                     
+           document.getElementById("idade").innerHTML = ("Minha idade neste momento é: " + anos + " anos e " + meses + " meses." ); 
+            
+        </script>  
+        
+        
+      <p></p>
+      
+      <h3>Hobbies:</h3>
+      
+      <ul>
+          
+          <li>Gosto de uma boa leitura</li>
+          <li>Sou fã de games, principalmente RPG's</li>
+          <li>Também sou fã de super-heróis, seja em filmes, HQ's ou outras mídias</li>
+          <li>Gosto de séries e filmes dos mais variados temas</li>
+          
+      </ul>
+      
+      <h3>Um super-herói:</h3>
+      <p>Homem Aranha. Mesmo com todas as dificuldades que passa, persiste em fazer o que considera certo, ainda mantendo o bom humor.</p>
+        
+      <h3>Um animal:</h3>
+      <p>Águia. Voa mais alto que muitas aves, por vezes voanda acima das nuvens e da chuva, possuindo uma perspectiva que outros não têm.</p>
+      
+      <h3>Uma qualidade:</h3>
+      <p>Persistência. Para continuar lutando por seus objetivos mesmo quando as coisas não vão bem.</p>
+      
+      <h3>Uma frase que me marca:</h3>
+      <p><i>"Yesterday is not ours to recover, but tomorrow is ours to win or lose."</i><br>Que se traduz por:<i>"O ontem não é nosso para recuperar, mas o amanhã é nosso para ganhar ou perder"</i></p>
+      <p style="text-align: right; margin-top: -10px">Lyndon B. Johnson, 36° Presidente dos EUA</p>
+      
+ 
+      <p>Caso queira acessar a página contendo minha receita, clique <a href="RGss.html" class="link">aqui</a>.</p>
+     
+        <a href="#topo" class="link">De volta ao início</a> 
+        
+    </article>    
+        
+      <footer>
+      
+          <p>Ele mesmo levou em seu corpo os nossos pecados sobre o madeiro, a fim de que morrêssemos para os pecados e vivêssemos para a justiça; por suas feridas vocês foram curados.<br>
+          1 Pedro 2.24 
+          </p>
+
+      </footer>
+
+      </main>
+          
+  </body>
+
+
+</html>

@@ -1,0 +1,221 @@
+<!doctype html>
+
+<html lang="pt-BR">
+  
+    <head>
+        
+        <link href="./styles/cine.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>Minha Receita</title>
+        
+        <style>
+            
+            
+            header {margin-bottom: 10em}
+        
+            nav ul { list-style:none; margin:0; padding:4px }
+            nav ul li { display:inline-block }
+            nav ul li a {text-decoration: none; padding: 4px 20px }
+            
+            
+        </style>    
+    </head>
+
+  <body>
+      
+      <div id="fundo">                                     
+      </div>
+                
+      <div id="fundoe">                      
+      </div>
+      
+      <div id="fundod">                        
+      </div>
+      
+
+      <main>
+          
+        <section id="topo"></section>
+        
+          <header>
+        
+            <a href="https://pt-br.facebook.com/UFFOficial/" target="_blank"><img src="./images/uff.png" width="300" height="150" title="UFF" alt="UFF logo" style="margin: 30px 0 50px 75px "></a>
+            <a href="https://www.facebook.com/ufftech.ej/" target="_blank"><img src="./images/tech21.png" width="300" height="150" title="UFF" alt="UFF logo" style="margin: 50px 0 50px 75px "></a>
+            <h4 style="text-align: center">PROJETO TRAINEE</h4>
+
+        </header>
+          
+        <nav>
+          
+            <h2 style="text-align: center">Selecione outro template:</h2>
+            
+            <ul style="text-align: center">
+                
+                <li><a href="RGssS.html" class="link">STARS</a></li>
+                <li><a href="RGssP.html" class="link">PIXEL</a></li>
+                <li><a href="RGss.html" class="link">METAL</a></li>
+                <li><a href="RGssC.html" class="link">FORMAL</a></li>
+                
+            </ul>
+        
+          
+        </nav>
+          
+          <div id="relogio">
+          
+            <p id="hora"></p>
+            <p id="dia"></p>  
+              <script>
+                    
+                  var watch= new Date();
+                  var hrs=watch.getHours();
+                  var min=watch.getMinutes();
+                  var sec=watch.getSeconds();
+                  
+                  if (hrs<10) {hrs="0"+hrs} else {hrs=hrs};
+                  if (min<10) {min="0"+min} else {min=min};
+                  if (sec<10) {sec="0"+sec} else {sec=sec};
+                  
+                  
+                  document.getElementById("hora").innerHTML = ("Relógio Digital - " + hrs + ":" + min + ":" + sec);
+                
+                  
+                  var semana=["Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sábado"];
+                  var sched=["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
+                  
+                  var dia=watch.getDay();
+                  var dian=watch.getDate();
+                  var mes=watch.getMonth();
+                  var ano=watch.getFullYear();
+                  
+                  dia = semana[dia]
+                  mes = sched[mes]
+                  document.getElementById("dia").innerHTML = (dia+ ", " + dian + " de " + mes + " de " + ano);
+                  
+              </script>
+              
+              
+          </div>
+          
+    <article class="room">
+ 
+      <h1>Meu Prato Favorito:</h1>
+    
+      <h2>Strogonoff!</h2> 
+      
+      <figure>
+          <img src="./images/strogonoff-de-frango.jpg" width="240" height="180" title="Strogonoff!" alt="Foto de um prato de Strogonoff">
+          
+      </figure>
+      
+      <p>Uma receita bastante parecida com a que conhecemos hoje – à base de pedaços de carne, creme de leite, cebola e sal – já era preparada na Rússia czarista do século XIX. Segundo vários historiadores da gastronomia, o nome vem da família russa Stroganov, cuja origem é anterior ao ano 1500. Difícil é saber qual Stroganov foi, de fato, o criador da receita. Alguns pesquisadores a atribuem ao conde e diplomata Pavel Stroganov – que teve importante atuação política no reinado de Alexandre I (1777-1825) – ou a um de seus cozinheiros franceses. Outros afirmam que teria sido outro membro da mesma família, freqüentador da corte de Pedro, o Grande (1672-1725). Ainda assim, a respeitada enciclopédia de culinária Larousse Gastronomique (sem edição brasileira) cogita que o nome pode ser derivado do verbo strogat, que, em russo, significa algo como “cortar em pedaços”. Já a adição de champignons, páprica e mostarda é creditada ao cozinheiro francês Thierry Costet, que viveu na Rússia no final do século XIX.
+      Com a fuga da nobreza russa após a revolução de 1917, o prato chegou à França e, de lá, se espalhou para o mundo. A utilização de ketchup na receita foi popularizada pelos Estados Unidos.</p>
+      
+      
+      <h3>Segue a receita!</h3>
+          
+        <p>Quantas porções deseja?</p>
+        
+        <form style="position: relative">
+        
+            <input type="number" min="1" id="porçoes">
+            <button onclick="return enviar()">Calcular</button>
+            
+        </form>
+        
+        <h5>(Tempo de Preparo: 30min) </h5>
+          
+        <h3>Ingredientes:</h3> 
+     
+        <ul>
+          
+            <li id="txt1"></li>
+            <li id="txt2"></li>
+            <li id="txt3"></li>
+            <li id="txt4"></li>
+            <li id="txt5"></li>
+            <li id="txt6"></li>
+          
+        </ul>
+        
+        <script>
+        
+            function enviar() {
+                
+                var porçoes = document.getElementById("porçoes").value;
+                var texto1 = 100*porçoes + "g de de peito de frango cortados em cubos";
+                var texto2 = 0.2*porçoes + " lata(s) de molho de tomate";
+                var texto3 = 0.2*porçoes + " lata(s) de creme de leite";
+                var texto4 = (3/5)*porçoes + " dente(s) de alho";
+                var texto5 = 0.2*porçoes + " colher(es) de óleo";
+                var texto6 = "Sal a gosto";
+                
+                event.preventDefault(); 
+                
+                document.getElementById("txt1").innerHTML = texto1
+                document.getElementById("txt2").innerHTML = texto2
+                document.getElementById("txt3").innerHTML = texto3
+                document.getElementById("txt4").innerHTML = texto4
+                document.getElementById("txt5").innerHTML = texto5
+                document.getElementById("txt6").innerHTML = texto6
+            }
+        
+        
+        </script>
+       
+      <p>&nbsp;</p>
+      <h3>Modo de Preparo:</h3>
+      
+      <ol type="I">
+          
+             <li>Frite o alho no óleo até dourar.</li>
+             <li>Coloque o peito de frango cortado em cubos no fogo baixo, mexa bem e deixe por 3 a 10 minutos ou até cozinhar.</li>
+             <li>Acrescente o molho de tomate e ajuste o sal, deixe cozinhar por 5 minutos.</li>
+             <li>Acrescente o creme e leite, mexa bem e deixe por mais 3 minutos.</li>
+             <li>Se delicie com essa obra-prima da culinária!</li>
+
+      </ol>
+      
+    
+      
+      <p>Caso esteja com dificuldades, <a href="https://www.youtube.com/watch?v=uRUFLh_eXxQ" class="link" target="_blank">este vídeo</a> do canal Ana Maria Brogui pode te ajudar.</p>
+      
+      
+      <p>fontes:</p>
+      
+      <p>
+          
+            <a href="https://super.abril.com.br/mundo-estranho/qual-e-a-origem-do-estrogonofe/" class="link" target="_blank">Mundo Estranho</a><br>
+            <a href="https://www.tudogostoso.com.br/receita/132121-estrogonofe-de-frango-simples.html" class="link" target="_blank">TudoGostoso</a>
+      
+      </p>
+     
+      
+      <p>Caso queira acessar a página contendo meu perfil, clique <a href="PGssT.html" class="link" >aqui</a>.</p>
+      
+        
+     <a href="#topo" class="link">De volta ao início</a>    
+        
+        
+    </article>
+          
+      <footer>
+      
+          <p style="margin-bottom: 150px">Ele mesmo levou em seu corpo os nossos pecados sobre o madeiro, a fim de que morrêssemos para os pecados e vivêssemos para a justiça; por suas feridas vocês foram curados.<br>
+          1 Pedro 2.24 
+          </p>
+          
+          <p style="text-align: center; font-size: 2em" >FIM</p>
+          
+                   
+      </footer>
+          
+         <div style="background-color:black; width: 900px; height:800px; margin-left:-10px; margin-bottom: -0px">
+         </div>
+          
+      </main>
+    
+  
+    </body>
+    
+</html>

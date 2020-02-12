@@ -1,0 +1,65 @@
+#fundo{
+    
+    position: fixed;
+    background-image: url(../images/theaterwp4.png);
+    background-size: contain;
+    background-position:center;
+    width: 1348px;
+    height: 700px;
+    top: 0;
+    left: 0;   
+}
+
+#fundoe{
+    
+    position: fixed;
+    background: linear-gradient(to right,black, #8B5742);
+    width: 285px;
+    height: 700px;
+    top: 0;
+    left: 0;
+    
+}
+
+#fundod{
+    
+    position: fixed;
+    background: linear-gradient(to left,black, #8B5742);
+    width: 285px;
+    height: 700px;
+    top: 0;
+    right: 0;   
+}
+
+#tela{
+    
+  
+    background: ltransparent;
+    width: 445px;
+    height: 300px;
+    top: 100px;
+    left: 450px;
+    overflow: hidden;
+        
+}
+
+
+
+main {
+        
+        width: 450px;
+      margin: 0 auto;
+      margin-top: 120px;
+      
+
+
+}
+
+
+header h4 {margin:100px}
+
+footer {margin-bottom: 800px}
+
+nav {margin: 100px}
+
+.link {position:relative; text-decoration: underline; color: black}

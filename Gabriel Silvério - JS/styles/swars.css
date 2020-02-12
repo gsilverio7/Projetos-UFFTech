@@ -1,0 +1,32 @@
+
+body {
+  
+  background: #000;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;  
+
+    
+}
+
+.star-wars { 
+    
+  color: #feda4a;
+  font-family: 'Pathway Gothic One', sans-serif;
+  text-align: justify; 
+  font-size: 450%;
+  font-weight: 550;
+  letter-spacing: 6px;
+  line-height: 150%; 
+  transform: rotateX(45deg);
+
+    
+    
+    
+}
+
+
+.link {text-decoration: underline; color: #feda4a}
+
+nav ul li a:hover{color: yellow}
+
